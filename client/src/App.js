@@ -55,6 +55,11 @@ class App extends Component {
         "Accept": "application/json"
       }
     })
+
+    this.setState({
+      currentTasks: updatedTasks
+    })
+
     const updatedTasks = this.state.currentTasks.filter(oneTask => {
       return oneTask !== task
     })

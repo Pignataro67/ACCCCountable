@@ -1,5 +1,5 @@
 import React from 'react';
-// props= tasks, addATask(), deleteTask(), working;
+// props= tasks, addATask(), deleteTask(), working, toggleCheckbox();
 
 const TaskList = props => {
 
@@ -23,7 +23,7 @@ const TaskList = props => {
 
   const createCheckedTasks = (task, idx) => {
     return <li key={idx}>
-    <input type="checkbox" name={task} />
+    <input type="checkbox" name={task} onChange={(e)=>props.toggleCheckbox(e, task)}/>
     {task.title}
 
     </li>

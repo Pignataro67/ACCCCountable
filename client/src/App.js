@@ -127,13 +127,13 @@ class App extends Component {
     render() {
       return (
         <div className="App">
-          <UserHomepage appState={this.state} sendTime={this.sendTime} addATask={this.addATask} deleteTask={this.deleteTask} working={this.state.working}/>
+          <UserHomepage appState={this.state} sendTime={this.sendTime} addATask={this.addATask} deleteTask={this.deleteTask} working={this.state.working} toggleCheckbox={this.toggleCheckbox}/>
         </div>
       );
     }
 
     componentDidMount() {
-      console.log("I updated")
+      
       fetch("http://localhost:3001/work_sessions")
       .then(res => res.json())
       .then(data => filterWorkSessions(data))

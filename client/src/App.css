@@ -3,10 +3,10 @@ body {
 }
 .App {
   text-align: left;
-  width: 290px;
+  width: 80vw;
   height: 1000vh;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 30px;
   background-color: white;
 }
 
@@ -19,6 +19,16 @@ body {
 .timer {
   background-color: gray;
   display: inline-block;
+}
+
+.note {
+  background-color: blue;
+  height: 30%;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  max-width: 550px;
 }
 
 .delete-button{
